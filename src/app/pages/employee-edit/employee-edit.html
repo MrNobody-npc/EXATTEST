@@ -1,0 +1,23 @@
+<div class="form-box" *ngIf="employee">
+  <h2>Edit Employee</h2>
+
+  <form (ngSubmit)="updateEmployee()">
+    <label>Employee Code:</label>
+    <input [(ngModel)]="employee.EMP_CODE" name="EMP_CODE" required>
+
+    <label>Prefix:</label>
+    <input [(ngModel)]="employee.EMP_PREFIX" name="EMP_PREFIX">
+
+    <label>First Name:</label>
+    <input [(ngModel)]="employee.EMP_FNAME" name="EMP_FNAME" required>
+
+    <label>Last Name:</label>
+    <input [(ngModel)]="employee.EMP_LNAME" name="EMP_LNAME" required>
+
+    <label>Sex:</label>
+    <input [(ngModel)]="employee.EMP_SEX" name="EMP_SEX">
+
+    <button type="submit">Update Employee</button>
+    <button type="button" class="btn-cancel" (click)="cancel()">Cancel</button>
+  </form>
+</div>

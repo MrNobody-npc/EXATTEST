@@ -1,0 +1,61 @@
+$form-bg: #fff;
+$success: #28a745;
+$danger: #dc3545;
+
+.form-box {
+  width: 400px;
+  margin: 50px auto;
+  background: $form-bg;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    label {
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button[type="submit"] {
+      background-color: $success;
+      color: #fff;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+
+    .btn-cancel {
+      background-color: $danger;
+      color: #fff;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+}
